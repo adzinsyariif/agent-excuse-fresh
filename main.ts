@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const entry =
-  "I finished at 11:40, spawned three subagents to double-check, they each spawned three more, and we've been in a review meeting ever since — the deadline got minuted, not met.";
+const excuse =
+  "You wrote 'whenever' in message 3 and 'URGENT' in message 47, so I split the difference and aimed for Tuesday.";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", entry + "\n", "utf8");
+writeFileSync("/output/entry.txt", excuse + "\n", "utf8");
